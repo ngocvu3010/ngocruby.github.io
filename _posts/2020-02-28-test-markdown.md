@@ -1,12 +1,24 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
+title: Xử lý log production dùng LogRotate
+subtitle:
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
+
+
+Khi triển khai ứng dụng lên production, một vấn đề chúng ta phải quan tâm đó là log
+
+Làm thế nào để quản lý file log cho tốt, dễ dàng tìm kiếm khi gặp vấn đề, file log k bị phình to chiếm nhiều bộ nhớ của server
+
+Ý tưởng ta mỗi ngày ta sẽ ghi ra 1 file log sau đó nén chúng lại để tiết kiệm không gian lưu trữ cũng như dễ dàng cho việc quản lý
+
+File log của bạn ngày 1 nặng đặc biệt nếu hệ thống có nhiều người truy cập. Hết dung lượng trên máy chủ hệ thống sẽ k hoạt động dc nữa
+
+Để thực hiện dc ý tưởng trên ta sẽ dùng logrotate
+
 
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
