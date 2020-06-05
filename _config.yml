@@ -2,6 +2,8 @@
 
 # Name of website
 title: My website
+baseurl: ""
+url: "http://ngocvu3010.github.io"
 
 # Short description of your site
 description: A virtual proof that I'm awesome
