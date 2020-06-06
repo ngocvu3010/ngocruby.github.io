@@ -18,6 +18,7 @@ Làm thế nào để quản lý file log cho tốt, dễ dàng tìm kiếm khi 
 File log của bạn ngày 1 nặng đặc biệt nếu hệ thống có nhiều người truy cập. Hết dung lượng trên máy chủ hệ thống sẽ k hoạt động dc nữa
 
 Để thực hiện dc ý tưởng trên ta sẽ dùng logrotate
+hoho
 
 
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
