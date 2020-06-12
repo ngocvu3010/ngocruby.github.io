@@ -10,6 +10,7 @@ tags: [books, test]
 Để bắt đầu code Ruby on Rails mình suggest cài đặt các bước như sau: 
 
 Những thứ cần cài đó là :
+
 * Ubuntu 16.04 LTS							
 * RVM - Ruby Version Manager							
 * Ruby							
@@ -17,7 +18,8 @@ Những thứ cần cài đó là :
 * MySQL 							
 * GIT							
 * Phần mềm Sublime Text : Khuyến khích các bạn dùng sublime text để code				
-* 			
+
+
 ## Cài RVM và Ruby (Có thể dùng rbenv cũng dc)							
 RVM viết tắt của từ  Ruby Version Manager nghĩa là quản lý version Ruby, giúp chúng ta có thể cài nhiều bản ruby cùng 1 lúc							
 
