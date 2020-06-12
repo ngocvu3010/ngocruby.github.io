@@ -6,6 +6,7 @@ cover-img: /assets/img/path.jpg
 tags: [books, test]
 ---
 
+
 Để bắt đầu code Ruby on Rails mình suggest cài đặt các bước như sau: 
 
 Những thứ cần cài đó là :
@@ -15,7 +16,8 @@ Những thứ cần cài đó là :
 * Rails							
 * MySQL 							
 * GIT							
-* Phần mềm Sublime Text : Khuyến khích các bạn dùng sublime text để code							
+* Phần mềm Sublime Text : Khuyến khích các bạn dùng sublime text để code				
+* 			
 ## Cài RVM và Ruby (Có thể dùng rbenv cũng dc)							
 RVM viết tắt của từ  Ruby Version Manager nghĩa là quản lý version Ruby, giúp chúng ta có thể cài nhiều bản ruby cùng 1 lúc							
 
@@ -89,7 +91,7 @@ rails --version
 ```
 
 ## Cài đặt Mysql							
-Trong quá trình học ta sẽ sử dụng MySQL							
+Sử dụng MySQL							
 Cài đặt theo hướng dẫn : https://linuxize.com/post/how-to-install-mysql-on-ubuntu-18-04/							
 ## Cài đặt git		
 
@@ -175,10 +177,31 @@ Các bạn tham khảo setting của mình:
         ""wrap_width"": 80
 }
 ```
-							
+
+Đối với  Visual Studio:
+
+```
+{
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [80],
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.stablePeek": true,
+    "editor.gotoLocation.multiple": "goto",
+    "references.preferredLocation": "view",
+    "git.autofetch": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "window.zoomLevel": -1,
+    "window.titleBarStyle": "custom",
+    "explorer.confirmDelete": false,
+    "search.location": "panel"
+}
+```
 Giờ thì quẩy code Rails được rồi đó :v							
 							
 							
 							
 							
-Ref : https://www.howtoforge.com/tutorial/ubuntu-ruby-on-rails/							
+Ref : https://www.howtoforge.com/tutorial/ubuntu-ruby-on-rails/					
