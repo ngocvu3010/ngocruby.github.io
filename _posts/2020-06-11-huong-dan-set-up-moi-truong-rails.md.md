@@ -3,7 +3,8 @@ layout: post
 title: Hướng dẫn cài đặt môi trường để code Ruby on Rails
 subtitle:
 cover-img: /assets/img/path.jpg
-tags: [books, test]
+tags: [ruby, rails]
+comments: true
 ---
 
 
