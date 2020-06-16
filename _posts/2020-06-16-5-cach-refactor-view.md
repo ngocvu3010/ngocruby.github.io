@@ -1,3 +1,11 @@
+---
+layout: post
+title: [Rails] 5 Cách Refactor View mà bạn nên biết
+subtitle:
+cover-img: /assets/img/path.jpg
+tags: [books, test]
+---
+
 ## 1. Partials
 Partial được dùng nhóm các view html dùng chung ra 1 file. Điều này giúp hạn chế trùng lặp code giúp chúng ta tái sử dụng cũng như bảo trì một cách nhanh chóng ở view
 
