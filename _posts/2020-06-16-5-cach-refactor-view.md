@@ -2,7 +2,7 @@
 layout: post
 title: [Rails] 5 Cách Refactor View mà bạn nên biết
 subtitle:
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/refactor.png
 tags: [books, test]
 ---
 
