@@ -64,6 +64,8 @@ Tìm hiểu thêm tại:
 *  [Layouts and Rendering in Rails (Official Docs)](http://guides.rubyonrails.org/layouts_and_rendering.html)
 * [Action View Partials (Official Docs)](http://api.rubyonrails.org/classes/ActionView/PartialRenderer.html)
 * [Partials in Ruby on Rails](https://richonrails.com/articles/partials-in-ruby-on-rails)
+
+
 ## 2. Decorators
 Chúng ta sử dụng decorator để viết những logic không thuộc về model, cũng không thuộc về view.
 
@@ -195,6 +197,8 @@ Tham khảo thêm tại:
 
 * [Rails Refactoring Example: Introduce Null Object](https://robots.thoughtbot.com/rails-refactoring-example-introduce-null-object)
 * [Naught Gem](https://github.com/avdi/naught/)
+
+
 ## 4. Form Object
 `Form Object` sử dụng để đơn giản hóa form có nhiều model và các form có logic phức tạo khác. Thay vì sử dụng `accepts_nested_attributes_for`  và phải xử lý các validation fail của nhiều model, form object cho phép chúng ta có thể nhóm form lại và validation ở một chỗ khác. Do vậy `Form object` giúp chúng ta giảm thiểu tình trạng "Fat model", đồng thời giúp code sáng sủa hơn, validates dễ dàng hơn.
 
@@ -251,6 +255,8 @@ end
 * [Form Objects with Virtus](http://hawkins.io/2014/01/form_objects_with_virtus/)
 * [Form Objects (RailsCast)](http://railscasts.com/episodes/416-form-objects)
 * [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
+
+
 ## 5. Alternate Templating Languages
 `ERB` là một ngôn ngữ mẫu hoàn hảo, nhưng những ngôn ngữ tiên tiến hơn như `Haml` và `Slim` cho phép bạn viết HTML với Ruby trở nên rõ ràng hơn.
 
