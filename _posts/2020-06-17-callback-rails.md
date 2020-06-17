@@ -209,6 +209,8 @@ Notifying subscribers...
 
 `Callback` mang lại nhiều lợi ích nhưng chúng ta không nên lạm dụng sử dụng nó. Chỉ sử dụng callback khi logic liên quan đến bản thân đối tượng. Điều này sẽ tránh việc đối tượng phải xử lý những vấn đề nằm ngoài phạm vi kiểm soát của chính nó. Hi vọng bài viết sẽ giúp bạn hiểu thêm về `Callback` và sử dụng nó một cách tối ưu.
 
-### Nguồn tham khảo
+
+Ref:
 http://guides.rubyonrails.org/active_record_callbacks.html
+
 http://vinsol.com/blog/2014/07/07/custom-model-callbacks-in-rubyonrails/
