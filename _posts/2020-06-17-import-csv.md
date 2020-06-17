@@ -10,7 +10,8 @@ comments: true
 Có nhiều lúc bạn phải import 1 lượng lớn dữ liệu từ 1 file nào đó vào trong CSDL, Nó có thể là 1 file data mẫu khách hàng gửi dưới nhiều định dạng khác nhau, có thể là file Json, CSV, Excel... Ở bài viết này mình xin viết về import bằng file CSV.
 
 # Tạo mới
-### Cách 1
+### Cách 1 
+
 Chúng ta có 1 file csv là `file.csv` và cần phải tạo các bản ghi tương ứng với dữ liệu trong file csv. Cùng nhìn vào ví dụ, giả sử file CSV có hàng chục (hàng trăm) nghìn hàng:
 ```
 require 'csv'
@@ -24,6 +25,7 @@ end
 Nó sẽ bị đóng băng do
 * Tải toàn bộ CSV vào bộ nhớ
 * Tạo hàng trăm hàng nghìn bản ghi
+
 ### Cách 2
 ```
 CSV.foreach('link/to/file.csv', headers: true) do |row|
@@ -31,6 +33,7 @@ CSV.foreach('link/to/file.csv', headers: true) do |row|
 end
 ```
 Cách 2 tốt hơn cách 1 do vòng lặp lặp lại trên mỗi hàng của CSV thay vì tải toàn bộ tệp vào bộ nhớ. Tuy nhiên vẫn có nhược điểm là mất nhiều thời gian tạo do phải foreach nhiều lần.
+
 ### Cách 3
 Đây là cách tối ưu nhất. Ta sẽ sử dụng gem [ActiveRecord import](https://github.com/zdennis/activerecord-import) . Thay vì phải foreach và insert nhiều lần vào database thì ta chỉ insert 1 lần
 ```
@@ -44,6 +47,7 @@ Item.import(items)
 Gem cung cấp method `import` rất tiện dụng giúp chúng ta có thể insert 1 lần vào database nhiều bản ghi cùng 1 lúc. 
 # Tạo mới dựa trên cái có sẵn
 Giả sử chung ta có nhiều bản ghi mới cần import, nhưng chúng cần được liên kết với 1 bản ghi hiện có. chúng ta có 2 model: `List` và `Item`. quan hệ: `List` có nhiều `items`. Mỗi `item` thuộc về một `list`
+
 ### Cách 1
 ```
 items = []
@@ -54,6 +58,7 @@ end
 Item.import(items)
 ```
 Ở đây ta có sử dụng method `import`, nhưng hiện tại ta phải chạy `find_by` ở mỗi vòng lặp
+
 ### Cách 2
 ```
 lists_hash = List.pluck(:name, :id).to_h
@@ -68,6 +73,7 @@ Item.import(items)
 ```
 `List.pluck` sẽ chạy 1 query duy nhất lấy `name` và `id`. Query này chạy k tốn thời gian kể cả với lượng dữ liệu lớn. Sau đó thay vì ta tìm `id` qua truy vấn database thì ta sẽ thực hiện trên mảng. Vậy tất cả chỉ tốn 2 query. Cách 2 tối ưu hơn cách 1 rất nhiều phải không?
 Nếu bạn có 1 file CSV, json lớn có thể đến hàng trăm, hàng triệu bản ghi thì chúng ta phải chia nhỏ chúng trước khi import. Khi đó có thể `ActiveRecord.import` sẽ fail. Nhưng có thể dễ dàng sử dụng `import` bằng cách sử dụng `array.each_slice` chia nhỏ chúng ra sau đó import. 
+
 # Một vài cách import khác
 Đôi khi chúng ta đã có dữ liệu được build trong 1 array và tất cả những gì chúng ta cần làm là import sao cho khớp với dữ liệu trong đó. Nếu bạn muốn dừng việc build đối tượng trong bộ nhớ, ta có thể import trực tiếp bằng array mà k phải là list các object:
 ```
@@ -91,6 +97,7 @@ Ngoài ra bạn có thể tìm hiểu thêm các options khác mà gem `activere
 - batch_size: chỉ định số lượng tối đa các bản ghi mỗi lần insert. Mặc định là all
 
 Bạn có thể xem thêm tại:
+
 https://www.rubydoc.info/gems/activerecord-import/ActiveRecord/Base#bulk_import-class_method
 
 Ví dụ: 
@@ -142,7 +149,8 @@ puts posts.first.persisted? # => true
 Hi vọng bài viết giúp ích cho bạn :D 
 
 
-**Nguồn tham khảo**
+**Ref**
 
 https://mattboldt.com/importing-massive-data-into-rails/
+
 https://www.rubydoc.info/gems/activerecord-import/ActiveRecord
