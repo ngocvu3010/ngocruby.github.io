@@ -173,6 +173,35 @@ p a
 # false
 ```
 
+# Beginless Ranges
+
+Khi sử dụng case when với nhiều điều kiện sẽ có trường hợp ta phải xử lý trường hợp 1 đầu vô hạn  như :  in ra là quá khứ nếu date <= current date, lớn hơn >= current date in ra là tương lai, các trường hợp còn lại in ra là hiện tại ta có thể làm như sau : 
+```ruby
+case date
+when ..Date.today
+  :past
+when Date.today..
+  :feture
+else
+  :now
+end
+```
+
+1 ví dụ khác
+```ruby
+case release_date
+when ..1.year.ago 
+  puts "ancient"
+when 1.year.ago..3.months.ago
+  puts "old"
+when 3.months.ago..Date.today
+  puts "recent"
+when Date.today..
+  puts "upcoming"
+end
+```
+
+
 # Gọi private method bằng self
 
 Ở các phiên bản trước đó ta k thể gọi `self.private_method` mà chỉ có thể gọi `self.public_method` hoặc `self.protected_method`
