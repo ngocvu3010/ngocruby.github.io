@@ -2,7 +2,7 @@
 layout: post
 title: Ruby 2.7 đã cải tiến những gì
 subtitle:
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/27.jpg
 tags: [ruby]
 comments: true
 ---
