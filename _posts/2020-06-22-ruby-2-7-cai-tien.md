@@ -69,9 +69,9 @@ Nhìn vào ví dụ ta có 1 block với 1 tham số n:
 [1,2,3].each { |n| puts n }
 
 ```
-|n| là tham số và ta phải define thì mới dùng được
+n là tham số và ta phải define thì mới dùng được
 
-Nếu |n| là 1 tham số mặc định, k cần define mà vẫn dùng dc thì dòng code của chúng ta sẽ ngắn gọn đi rất nhiều. 
+Nếu n là 1 tham số mặc định, k cần define mà vẫn dùng dc thì dòng code của chúng ta sẽ ngắn gọn đi rất nhiều. 
 
 Ruby 2.7 đã làm dc điều đó. Đoạn code trên có thể thay thế bằng :
 
@@ -134,6 +134,7 @@ Nhớ lại 1 chút nếu làm việc vs 2 mảng ta có thể sử dụng các 
 | –     | difference     |Lấy về kết quả khác nhau giữa 2 mảng|
 
 # Argument forwarding syntax
+
 Chúng ta có thể sử dụng syntax `(...)` để thêm toàn bộ tham số của method vào 1 method khác dc gọi bên trong.
 
 VD:
@@ -206,7 +207,9 @@ end
 
 Ở các phiên bản trước đó ta k thể gọi `self.private_method` mà chỉ có thể gọi `self.public_method` hoặc `self.protected_method`
 Ở phiên bản 2.7 đã nâng cấp phạm vi truy cập của private : ta đã có thể gọi `self.private_method`
+
 # Giao diện IRB được nâng cấp
+
 IRB hỗ trợ highlight cú pháp. tự động thụt dòng khi code xuống dòng hỗ trợ auto completion rất tiện lợi khi code trực tiếp trên irb. So vs các phiên bản trc đó thì nó dc hỗ trợ về mặt giao diện rất nhiều nhưng vẫn đi sau thằng [Pry](https://cobaltbluemedia.com/pryrepl/)
 
 
