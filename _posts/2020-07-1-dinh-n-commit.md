@@ -84,7 +84,9 @@ commit A
 **HEAD~1**  Tức sẽ lùi lại 1 commit so với commit hiện tại trên cùng nhánh
 
 **HEAD~n** : Lùi lại n commit so vs commit hiện tại trên cùng nhánh
+
 **HEAD~~** : sẽ giống với HEAD~2 
+
 Thay vì chỉ định **mã SHA** ta có thể thay thế nó bằng **HEAD~n**
 
 ```
