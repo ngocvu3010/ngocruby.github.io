@@ -85,19 +85,21 @@ commit A
 
 **HEAD~n** : Lùi lại n commit so vs commit hiện tại trên cùng nhánh
 **HEAD~~** : sẽ giống với HEAD~2 
-Thay vì chỉ định **commit_id_A** ta có thể thay thế nó bằng **HEAD~n**
+Thay vì chỉ định **mã SHA** ta có thể thay thế nó bằng **HEAD~n**
 
 ```
+git reset --soft b047857
 git reset --soft HEAD~2
 git reset --soft HEAD~~
 ```
-2 câu lệnh này tương đương
+3 câu lệnh này tương đương
 
 ### Nghịch linh tinh xong muốn trở về code ban đầu ntn
 
 
 Sau khi nghịch rối tung rối mù lên bạn muốn trở về code ban đầu, giữ nguyên 3 commit và code lúc đầu
 ta dùng ORIG_HEAD
+
 ```
 git reset --hard ORIG_HEAD
 ```
