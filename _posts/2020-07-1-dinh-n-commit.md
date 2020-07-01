@@ -95,6 +95,7 @@ git reset --soft HEAD~~
 
 ### Nghịch linh tinh xong muốn trở về code ban đầu ntn
 
+
 Sau khi nghịch rối tung rối mù lên bạn muốn trở về code ban đầu, giữ nguyên 3 commit và code lúc đầu
 ta dùng ORIG_HEAD
 ```
@@ -127,9 +128,11 @@ b047857 HEAD@{11}: commit: commit A
 Muốn quay về vị trí bất kỳ bạn chỉ cần dùng các câu lệnh git reset trên sử dụng mã SHA ở đầu 
 
 VD muốn quay về thời điểm commit amend của commit C:
+
 ```
 git reset --soft fc12c05
 ```
+
 
 #### Nếu đã commit thì sẽ k baoh lo bị mất code
 
