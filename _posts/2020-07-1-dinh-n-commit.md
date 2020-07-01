@@ -108,7 +108,12 @@ git reset --hard ORIG_HEAD
 
 Giả sử mình đã làm rất nhiều thao tác, thêm code, rồi commit,reset các kiểu
 
-Bạn có thể xem lịch sử bằng cách :
+Bạn có thể xem lịch sử bằng :
+
+```
+git reflog
+```
+
 ```
 107f88c HEAD@{0}: reset: moving to 107f88c
 fc12c05 HEAD@{1}: commit (amend): commit C
